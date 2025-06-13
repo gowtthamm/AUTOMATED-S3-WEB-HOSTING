@@ -165,7 +165,7 @@ depends_on = [aws_s3_bucket_acl.example]
 
          terraform plan
 
-<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/dbcd8b5629c97509e3076550d63e76c29ff88c63/plan.png" width="500" height="200"/>
+<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/dbcd8b5629c97509e3076550d63e76c29ff88c63/plan.png" width="600" height="200"/>
 
 3.  Apply the infrastructure:
 
