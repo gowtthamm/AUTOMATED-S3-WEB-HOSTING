@@ -20,12 +20,12 @@
 	   | --- provider.tf
 	   | --- variable.tf
 	   | --- main.tf  
-	           | --- Ownership Control
-	           | --- Public Access 
-            | --- ACL
-            | --- index.html
-            | --- error.html
-            | --- Webhosting Configuration 
+	             | --- Ownership Control
+	             | --- Public Access 
+              | --- ACL
+              | --- index.html
+              | --- error.html
+              | --- Webhosting Configuration 
 </code>
 </pre>
 
