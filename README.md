@@ -155,17 +155,17 @@ depends_on = [aws_s3_bucket_acl.example]
 
 # TERRAFORM COMMANDS 
 
-01.  Initializes the working
+1.  Initializes the working
 
           terraform init
 
 <img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/2980c712875180f19bb75522603e34cc12715147/init.png" width="600" height="200"/>
      
-3.  Review the infrastructure changes
+2.  Review the infrastructure changes
 
          terraform plan
 
-4.  Apply the infrastructure:
+3.  Apply the infrastructure:
 
           terraform apply
 
