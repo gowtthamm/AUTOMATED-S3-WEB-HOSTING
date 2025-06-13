@@ -174,4 +174,10 @@ depends_on = [aws_s3_bucket_acl.example]
 <img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/471a0da09542884be0f2073352dfa6880ec5d5a9/Output.png" width="500" height="300"/>
 
 
+# DESTROY 
+
+           terraform destroy 
+
+
+
 
