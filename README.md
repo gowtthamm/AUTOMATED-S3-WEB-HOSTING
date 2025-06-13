@@ -47,10 +47,6 @@ variable "bucketname" {
 resource "aws_s3_bucket" "projectbucket" {
   bucket = var.bucketname
 }
-
-resource "aws_s3_bucket" "example" {
-  bucket = "terraformproject2025" 
-}
 </code>
 </pre>
 
