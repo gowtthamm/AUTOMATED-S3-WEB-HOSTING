@@ -185,7 +185,7 @@ depends_on = [aws_s3_bucket_acl.example]
 
 # EVERY SOURCE AS BEEN DELETED 
 
-<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/38c853404b9b01d0e394aef398371da65b641c71/Destroyed.png" width="600" height="400"/>
+<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/38c853404b9b01d0e394aef398371da65b641c71/Destroyed.png" width="600" height="200"/>
 
 
 
