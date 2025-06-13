@@ -2,7 +2,7 @@
 
  This project involves hosting a static website on AWS S3 using Terraform, with all configuration and automation coded through PowerShell—including writing Terraform files and executing commands like init, plan, and apply.
 
- <img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/f989bbdd7c11567635cf0db51728e037c40f2abc/OVERVIEW.png" width="500" height="400" />
+ <img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/f989bbdd7c11567635cf0db51728e037c40f2abc/OVERVIEW.png"  />
 
 # OVERVIEW 
 
@@ -95,7 +95,7 @@ resource "aws_s3_bucket_public_access_block" "example" {
 </code>
 </pre>
 
-<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/b8d78ebd6f937410bdb1d58309ebfed92da54216/public%20access.png" width="500" height="200"/>
+<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/b8d78ebd6f937410bdb1d58309ebfed92da54216/public%20access.png"/>
 
 # ACL FOR BUCKET TO MAKE IT PUBLIC --> main.tf
 
@@ -145,7 +145,7 @@ resource "aws_s3_object" "error" {
 </code>
 </pre>
 
-<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/3300d19ecd027ab8730de80dbff7a31d0dd9a156/Object.png" width="700" height="200" />
+<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/3300d19ecd027ab8730de80dbff7a31d0dd9a156/Object.png"  />
 
 # WEBHOSTING CONFIGURATION --> Main.tf
 
@@ -165,7 +165,7 @@ depends_on = [aws_s3_bucket_acl.example]
 </code>
 </pre>
 
-<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/209b338f98da79dcc2cd0e19088db4772e564570/weblink.png" width="600" height="200" />
+<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/209b338f98da79dcc2cd0e19088db4772e564570/weblink.png"  />
 
 # TERRAFORM COMMANDS 
 
@@ -185,7 +185,7 @@ depends_on = [aws_s3_bucket_acl.example]
 
           terraform apply
 
-<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/471a0da09542884be0f2073352dfa6880ec5d5a9/Output.png" width="600" height="430" />
+<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/471a0da09542884be0f2073352dfa6880ec5d5a9/Output.png" />
 
 
 # DESTROY 
@@ -197,7 +197,7 @@ depends_on = [aws_s3_bucket_acl.example]
 
 # EVERY SOURCE AS BEEN DELETED 
 
-<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/38c853404b9b01d0e394aef398371da65b641c71/Destroyed.png" width="600" height="200"/>
+<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/38c853404b9b01d0e394aef398371da65b641c71/Destroyed.png"/>
 
 
 
