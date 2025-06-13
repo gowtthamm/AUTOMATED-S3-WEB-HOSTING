@@ -146,3 +146,5 @@ depends_on = [aws_s3_bucket_acl.example]
 }
 </code>
 </pre>
+
+<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/209b338f98da79dcc2cd0e19088db4772e564570/weblink.png" width="600" height="200" />
