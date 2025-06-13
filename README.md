@@ -20,8 +20,12 @@
 	   | --- provider.tf
 	   | --- variable.tf
 	   | --- main.tf  
-	            | --- Bucket Public Access
-	            | --- error.html
+	            | --- Ownership Control
+	            | --- Public Access 
+             | --- ACL
+             | --- index.html
+             | --- error.html
+             | --- Webhosting Configuration 
 </code>
 </pre>
 
@@ -31,7 +35,7 @@
 <pre>
 <code>
 terraform {
-  required_providers {
+  required_providers {na 
     aws = {
       source = "hashicorp/aws"
       version = "6.0.0-beta3"
