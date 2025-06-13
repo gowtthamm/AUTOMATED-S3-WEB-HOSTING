@@ -52,7 +52,7 @@ resource "aws_s3_bucket" "projectbucket" {
 </code>
 </pre>
 
-<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/a032d97d5f88709fb288a9525383c961532a0593/Bucket%20Created.png" width="600" height="200" />
+<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/a032d97d5f88709fb288a9525383c961532a0593/Bucket%20Created.png" width="700" height="200" />
 
 # OWNERSHIP CONTROL --> main.tf
 
