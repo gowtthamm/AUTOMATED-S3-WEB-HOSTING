@@ -12,7 +12,7 @@
 
 
 
- # Provider.tf 
+ # PROVIDER --> provider.tf
 
 <pre>
 <code>
@@ -29,6 +29,15 @@ provider "aws" {
 	region = "ap-south-1"
 }
 </code> 
+</pre>
+
+# VARIABLE --> variable.t
+<pre>
+<code>
+variable "bucketname" {
+	default = "bucketprojecthosting22"
+}	
+</code>
 </pre>
 
 # TO CREATE BUCKET --> main.tf
@@ -90,41 +99,6 @@ resource "aws_s3_bucket_acl" "example" {
 </code>
 </pre>
 
-# HTML CODE 
-<pre>
-<code> 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Hello World</title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-</body>
-</html>
-</code>
-</pre>
-
-# ERROR HTML CODE
-<pre>
-<code>
-<!DOCTYPE html>
-<htm> <!-- Typo: should be <html> -->
-  <head>
-    <titel>Hello</titel> <!-- Typo: should be <title> -->
-    <script>
-      // Intentional JavaScript error
-      console.log(myUndefinedVariable); // ReferenceError
-    </script>
-  </head>
-  <body>
-    <h1>Hello, World! <!-- Missing closing tag -->
-    <p>This is a broken HTML file.</p>
-  </body>
-</htm>
-
-</code>
-</pre>
 
 #  index.html // error.html --> main.tf
 <pre>
