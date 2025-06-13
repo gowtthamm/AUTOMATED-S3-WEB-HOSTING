@@ -45,7 +45,7 @@ provider "aws" {
 </code> 
 </pre>
 
-# VARIABLE --> variable.t
+# VARIABLE --> variable.tf
 <pre>
 <code>
 variable "bucketname" {
