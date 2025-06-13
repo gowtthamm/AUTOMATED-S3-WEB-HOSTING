@@ -5,7 +5,9 @@
 # Overview 
 
 • infrastructure : AWS-S3 
+
 • IaC : Terraform 
+
 • Scripting/Automation : Powershell 
 
 # AWS Infrastructure Setup 
