@@ -13,8 +13,10 @@
 # PROCEDURE 
 
 --> Provider.tf :
-'''bash
-terraform {
+
+<pre>
+<code>
+	terraform {
   required_providers {
     aws = {
       source = "hashicorp/aws"
@@ -24,10 +26,9 @@ terraform {
 }
 
 provider "aws" {
-  # Configuration options
 	region = "ap-south-1"
 }
-'''
-
+</code> 
+</pre>
 
         
