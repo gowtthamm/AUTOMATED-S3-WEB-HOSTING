@@ -129,6 +129,8 @@ resource "aws_s3_object" "error" {
 </code>
 </pre>
 
+<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/3300d19ecd027ab8730de80dbff7a31d0dd9a156/Object.png" width="600" height="200" />
+
 # WEBHOSTING CONFIGURATION --> Main.tf
 
 <pre>
