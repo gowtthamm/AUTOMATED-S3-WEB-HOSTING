@@ -12,6 +12,18 @@
 
 • Scripting/Automation : Powershell 
 
+# FLOW
+<pre>
+<code>
+	Project
+	   |
+	   | --- provider.tf
+	   | --- variable.tf
+	   | --- main.tf  
+	            | --- index.html
+	            | --- error.html
+</code>
+</pre>
 
 
  # PROVIDER --> provider.tf
