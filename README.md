@@ -12,7 +12,7 @@
 
 
 
- #Provider.tf 
+ # Provider.tf 
 
 <pre>
 <code>
@@ -26,27 +26,29 @@ terraform {
 }
 
 provider "aws" {
-  # Configuration options
 	region = "ap-south-1"
 }
 </code> 
 </pre>
 
-#main.tf
+# TO CREATE BUCKET --> main.tf
 
 <pre>
 <code>
-	# Create project bucket using a variable
 resource "aws_s3_bucket" "projectbucket" {
   bucket = var.bucketname
 }
 
-# Create another bucket (fixed name to avoid collision)
 resource "aws_s3_bucket" "example" {
-  bucket = "terraformproject2025" # ← Changed to avoid name conflict
+  bucket = "terraformproject2025" 
 }
+</code>
+</pre>
 
-# Ownership controls for the project bucket
+# OWNERSHIP CONTROL --> main.tf
+
+<pre>
+<code>
 resource "aws_s3_bucket_ownership_controls" "example" {
   bucket = aws_s3_bucket.projectbucket.id
 
@@ -54,8 +56,13 @@ resource "aws_s3_bucket_ownership_controls" "example" {
     object_ownership = "BucketOwnerPreferred"
   }
 }
+</code>
+</pre>
 
-# Public access settings for the project bucket
+# BUCKET PUBLIC ACCESS --> main.tf
+
+<pre>
+<code>
 resource "aws_s3_bucket_public_access_block" "example" {
   bucket = aws_s3_bucket.projectbucket.id
 
@@ -64,8 +71,13 @@ resource "aws_s3_bucket_public_access_block" "example" {
   ignore_public_acls      = false
   restrict_public_buckets = false
 }
+</code>
+</pre>
 
-# ACL for project bucket to make it public
+# ACL FOR BUCKET TO MAKE IT PUBLIC --> main.tf
+
+<pre>
+<code>
 resource "aws_s3_bucket_acl" "example" {
   depends_on = [
     aws_s3_bucket_ownership_controls.example,
@@ -75,8 +87,48 @@ resource "aws_s3_bucket_acl" "example" {
   bucket = aws_s3_bucket.projectbucket.id
   acl    = "public-read"
 }
+</code>
+</pre>
 
-# Upload index.html
+# HTML CODE 
+<pre>
+<code> 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+</body>
+</html>
+</code>
+</pre>
+
+# ERROR HTML CODE
+<pre>
+<code>
+<!DOCTYPE html>
+<htm> <!-- Typo: should be <html> -->
+  <head>
+    <titel>Hello</titel> <!-- Typo: should be <title> -->
+    <script>
+      // Intentional JavaScript error
+      console.log(myUndefinedVariable); // ReferenceError
+    </script>
+  </head>
+  <body>
+    <h1>Hello, World! <!-- Missing closing tag -->
+    <p>This is a broken HTML file.</p>
+  </body>
+</htm>
+
+</code>
+</pre>
+
+#  index.html // error.html --> main.tf
+<pre>
+<code>
 resource "aws_s3_object" "index" {
   bucket       = aws_s3_bucket.projectbucket.id
   key          = "index.html"
@@ -90,7 +142,6 @@ resource "aws_s3_object" "index" {
   ]
 }
 
-# Upload error.html
 resource "aws_s3_object" "error" {
   bucket       = aws_s3_bucket.projectbucket.id
   key          = "error.html"
@@ -103,18 +154,23 @@ resource "aws_s3_object" "error" {
     aws_s3_bucket_acl.example
   ]
 }
+</code>
+</pre>
+
+# WEBHOSTING CONFIGURATION --> Main.tf
+
+<pre>
+<code>
 resource "aws_s3_bucket_website_configuration" "website" {
   bucket = aws_s3_bucket.projectbucket.id
 
   index_document {
     suffix = "index.html"
   }
-
   error_document {
     key = "error.html"
   }
-
 depends_on = [aws_s3_bucket_acl.example]
 }
 </code>
-</pre>        
+</pre>
