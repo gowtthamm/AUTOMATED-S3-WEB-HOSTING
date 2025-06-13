@@ -16,7 +16,7 @@
 
 <pre>
 <code>
-	terraform {
+terraform {
   required_providers {
     aws = {
       source = "hashicorp/aws"
@@ -26,6 +26,7 @@
 }
 
 provider "aws" {
+  # Configuration options
 	region = "ap-south-1"
 }
 </code> 
