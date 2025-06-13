@@ -83,7 +83,7 @@ resource "aws_s3_bucket_public_access_block" "example" {
 </code>
 </pre>
 
-<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/b8d78ebd6f937410bdb1d58309ebfed92da54216/public%20access.png" width="600" height="200"/>
+<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/b8d78ebd6f937410bdb1d58309ebfed92da54216/public%20access.png" width="600" height="100"/>
 
 # ACL FOR BUCKET TO MAKE IT PUBLIC --> main.tf
 
