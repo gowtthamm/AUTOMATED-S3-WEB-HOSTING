@@ -20,7 +20,7 @@
 	   | --- provider.tf
 	   | --- variable.tf
 	   | --- main.tf  
-	            | --- index.html
+	            | --- Bucket Public Access
 	            | --- error.html
 </code>
 </pre>
