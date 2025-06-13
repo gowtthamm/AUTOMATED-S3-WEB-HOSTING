@@ -159,19 +159,19 @@ depends_on = [aws_s3_bucket_acl.example]
 
           terraform init
 
-<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/2980c712875180f19bb75522603e34cc12715147/init.png" width="500" height="200"/>
+<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/2980c712875180f19bb75522603e34cc12715147/init.png" />
      
 2.  Review the infrastructure changes
 
          terraform plan
 
-<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/dbcd8b5629c97509e3076550d63e76c29ff88c63/plan.png" width="600" height="200"/>
+<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/dbcd8b5629c97509e3076550d63e76c29ff88c63/plan.png" />
 
 3.  Apply the infrastructure:
 
           terraform apply
 
-<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/471a0da09542884be0f2073352dfa6880ec5d5a9/Output.png" width="500" height="300"/>
+<img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/471a0da09542884be0f2073352dfa6880ec5d5a9/Output.png" />
 
 
 # DESTROY 
