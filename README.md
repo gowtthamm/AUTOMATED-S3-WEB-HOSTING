@@ -2,7 +2,7 @@
 
  This project involves hosting a static website on AWS S3 using Terraform, with all configuration and automation coded through PowerShell—including writing Terraform files and executing commands like init, plan, and apply.
 
-# Overview 
+# OVERVIEW 
 
 • infrastructure : AWS-S3 
 
@@ -10,6 +10,24 @@
 
 • Scripting/Automation : Powershell 
 
-# AWS Infrastructure Setup 
-  
+# PROCEDURE 
 
+--> Provider.tf :
+'''bash
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "6.0.0-beta3"
+    }
+  }
+}
+
+provider "aws" {
+  # Configuration options
+	region = "ap-south-1"
+}
+'''
+
+
+        
