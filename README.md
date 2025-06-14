@@ -22,10 +22,10 @@
 	   | --- main.tf  
 	          | --- Ownership Control
 	          | --- Public Access 
-             | --- ACL
-             | --- index.html
-             | --- error.html
-             | --- Webhosting Configuration 
+                  | --- ACL
+                  | --- index.html
+                  | --- error.html
+                  | --- Webhosting Configuration 
 </code>
 </pre>
 
