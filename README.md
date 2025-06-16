@@ -30,7 +30,7 @@
 </pre>
 
 
- # PROVIDER --> provider.tf
+  PROVIDER --> provider.tf
 
 <pre>
 <code>
@@ -49,7 +49,7 @@ provider "aws" {
 </code> 
 </pre>
 
-# VARIABLE --> variable.tf
+ VARIABLE --> variable.tf
 <pre>
 <code>
 variable "bucketname" {
@@ -58,7 +58,7 @@ variable "bucketname" {
 </code>
 </pre>
 
-# TO CREATE BUCKET --> main.tf
+TO CREATE BUCKET --> main.tf
 
 <pre>
 <code>
@@ -70,7 +70,7 @@ resource "aws_s3_bucket" "projectbucket" {
 
 <img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/a032d97d5f88709fb288a9525383c961532a0593/Bucket%20Created.png" />
 
-# OWNERSHIP CONTROL --> main.tf
+ OWNERSHIP CONTROL --> main.tf
 
 <pre>
 <code>
@@ -84,7 +84,7 @@ resource "aws_s3_bucket_ownership_controls" "example" {
 </code>
 </pre>
 
-# BUCKET PUBLIC ACCESS --> main.tf
+BUCKET PUBLIC ACCESS --> main.tf
 
 <pre>
 <code>
@@ -101,7 +101,7 @@ resource "aws_s3_bucket_public_access_block" "example" {
 
 <img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/b8d78ebd6f937410bdb1d58309ebfed92da54216/public%20access.png"/>
 
-# ACL FOR BUCKET TO MAKE IT PUBLIC --> main.tf
+ ACL FOR BUCKET TO MAKE IT PUBLIC --> main.tf
 
 <pre>
 <code>
@@ -118,7 +118,8 @@ resource "aws_s3_bucket_acl" "example" {
 </pre>
 
 
-#  index.html // error.html --> main.tf
+index.html // error.html --> main.tf
+
 <pre>
 <code>
 resource "aws_s3_object" "index" {
@@ -151,7 +152,7 @@ resource "aws_s3_object" "error" {
 
 <img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/3300d19ecd027ab8730de80dbff7a31d0dd9a156/Object.png"  />
 
-# WEBHOSTING CONFIGURATION --> Main.tf
+ WEBHOSTING CONFIGURATION --> Main.tf
 
 <pre>
 <code>
@@ -192,14 +193,14 @@ depends_on = [aws_s3_bucket_acl.example]
 <img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/471a0da09542884be0f2073352dfa6880ec5d5a9/Output.png" />
 
 
-# DESTROY 
+ DESTROY 
 
 	terraform destroy 
  
 <img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/4e02e4e31f31c9c88cf619b9d6e44380d8c749b1/destroy.png" />
 <img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/ae28d424b5a75279efaf75dc05c7cfc1f8f556f6/Destroyedcmd.png" />
 
-# EVERY SOURCE AS BEEN DELETED 
+EVERY SOURCE AS BEEN DELETED 
 
 <img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/38c853404b9b01d0e394aef398371da65b641c71/Destroyed.png"/>
 
