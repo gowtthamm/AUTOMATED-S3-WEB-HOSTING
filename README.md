@@ -4,7 +4,7 @@
 
  <img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/f989bbdd7c11567635cf0db51728e037c40f2abc/OVERVIEW.png"  />
 
-# OVERVIEW 
+# 🎯 OVERVIEW 
 
 • infrastructure : AWS-S3 
 
@@ -25,7 +25,8 @@
                   | --- ACL
                   | --- index.html
                   | --- error.html
-                  | --- Webhosting Configuration 
+                  | --- Webhosting 
+ 🔗 Configuration 
 </code>
 </pre>
 
