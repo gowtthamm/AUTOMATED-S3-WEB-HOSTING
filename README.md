@@ -1,6 +1,6 @@
 # 🧑🏻‍💻 AUTOMATED-S3-WEBPAGE-HOSTING
 
- This project involves hosting a static website on AWS S3 using Terraform, with all configuration and automation coded through PowerShell—including writing Terraform files and executing commands like init, plan, and apply.
+ This project involves hosting a static website on AWS S3 using Terraform, with all configuration and automation coded through PowerShell—including writing Terraform files and executing commands like init, plan, apply and destroy 
 
  <img src="https://github.com/gowtthamm/AUTOMATED-S3-WEB-HOSTING/blob/f989bbdd7c11567635cf0db51728e037c40f2abc/OVERVIEW.png"  />
 
